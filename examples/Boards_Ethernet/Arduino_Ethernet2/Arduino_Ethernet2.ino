@@ -17,11 +17,11 @@
   This example code is in public domain.
 
  *************************************************************
-  This example shows how to use Arduino.org Ethernet Shield 2 (W5500)
+  This example shows how to use Arduino Ethernet Shield 2 (W5500)
   to connect your project to Blynk.
 
-  NOTE: You may have to install Arduino.ORG IDE to get it working:
-          http://www.arduino.org/software
+  Note: This requires Ethernet2 library
+    from http://librarymanager/all#Ethernet2
 
         Pins 10, 11, 12 and 13 are reserved for Ethernet module.
         DON'T use them in your sketch directly!
@@ -49,8 +49,8 @@ void setup()
 
   Blynk.begin(auth);
   // You can also specify server:
-  //Blynk.begin(auth, "blynk-cloud.com", 8442);
-  //Blynk.begin(auth, IPAddress(192,168,1,100), 8442);
+  //Blynk.begin(auth, "blynk-cloud.com", 80);
+  //Blynk.begin(auth, IPAddress(192,168,1,100), 8080);
   // For more options, see Boards_Ethernet/Arduino_Ethernet_Manual example
 }
 
